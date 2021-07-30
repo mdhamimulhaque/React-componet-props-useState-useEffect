@@ -4,7 +4,9 @@ import './App.css';
 
 function App() {
   //const users =[{name:"Tamal",age:18},{name:"Himel",age:22},{name:"Arman",age:27},{name:"Pranto",age:24}];
+  
 
+  //============ "userInfo" is state name & "setUserInfo" is declare for set the stage ===================
   const [userInfo, setUserInfo] = useState([]);
     useEffect(()=>{
      fetch("https://jsonplaceholder.typicode.com/users")
@@ -23,7 +25,7 @@ function App() {
        }
        
        
-       <TozbiCount></TozbiCount>
+       <TozbiCount></TozbiCount> {/*========This is state declare ==========/*}
       </header>
     </div>
   );
